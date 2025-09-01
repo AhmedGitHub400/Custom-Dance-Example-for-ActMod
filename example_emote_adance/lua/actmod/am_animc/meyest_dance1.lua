@@ -14,7 +14,7 @@
 // 		
 //     (/) note!
 // 	   > First of all, you must provide an image of the dance in ".png" format in the "materials/actmod/cumact" directory, and the dimensions of the image must be "250x250".
-//         > The "Custom animation ID name" Must be in English, numbers (and underscores are allowed), and must not already exist, otherwise it will be ignored or registration will fail.
+//         > The "Custom animation ID name" Must be in English, numbers (and underscores are allowed),  and must not already exist or it will be ignored/failed to be added to ActMod.
 // 
 //  ----------------------------------------------------------
 //   [] Tips:
@@ -24,7 +24,7 @@
 
 
 return{
-	["test_01__c_c_s_m"] = {   // <<Required>> Custom animation ID name ( Custom animation ID = image name (excluding extension) for Emotes/Dances  ( like: "abcde_d12"-> Good  "abcde_d12.png"-> bad  "abcde d12"-> bad )  )
+	["test_01__c_c_s_m"] = {   // <<Required>>  Custom animation ID name ( Custom animation ID = image name (excluding extension) for Emotes/Dances  ( like: "abcde_d12"-> Good  "abcde_d12.png"-> bad  "abcde d12"-> bad )  )
 		Config = {   // <<Required>>
 			Anim = "Amod_Fortnite_A1Dance"   // <<Required>>  Name of the (Emote/Dance) animation, It should already be included in the players' animations.
 			,Name = "Test 01 +(csm)"   // <<Required>>  Must be in English, numbers and underscores are allowed.
@@ -69,7 +69,6 @@ return{
 		-- }
 		
 		,Coop = {   // <<Optional>>  Allow others to join your emote/dance
-			//-- ,Reverse = true   // <<Optional>>  Make the join turn 180 degrees for direction  < Default: false >
 			Sync = true   // <<Optional>>  Make other animations in sync with you.  < Default: false >
 			-- YourAnim = "amod_fortnite_a1dance"    // <<Optional>>  Replace your animation   < Default: Will not be replaced >
 			-- ,OtherAnim = "amod_fortnite_a1dance"   // <<Optional>>  Replace other player's animation   < Default: Uses basic(in Config>Anim) >
@@ -358,4 +357,5 @@ return{
 			}
 		}
 	}
+
 }
