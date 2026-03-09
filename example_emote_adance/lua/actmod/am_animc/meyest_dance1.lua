@@ -48,6 +48,12 @@ return{
 			,Version = "1"   // <<Optional>>  Write a version for this dance (must be numbers only)  < Default: nothing >
 		}
 		
+		--,Flex = {   // <<Optional>>
+		--	Path = "actmod/flexs/myfileflex.json"   // <<Required>>  The path starts from the folder "<MyAddon>/data_static/"
+		--	//,SetFPS = 30   // <<Optional>>  This determines the speed in fps (Adjust it if the dance FPS is different)
+		--	//,AddSpace = -60   // <<Optional>>  Either skip it or give it some space at the beginning (Negative means skip)
+		--}
+		
 		,Camera = {   // <<Optional>>
 			Follow = false   // <<Optional>>  Enable the camera to track the body.  < Default: false >
 			,Transition = 1.5   // <<Optional>>  Time to move between the default location and the camera location  < Default: 5 >
@@ -365,5 +371,6 @@ return{
 	}
 
 }
+
 
 
