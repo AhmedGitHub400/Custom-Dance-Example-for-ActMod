@@ -28,7 +28,7 @@ return{
 		Config = {   // <<Required>>
 			Anim = "Amod_Fortnite_A1Dance"   // <<Required>>  Name of the (Emote/Dance) animation, It should already be included in the players' animations.
 			,Name = "Test 01 +(csm)"   // <<Required>>  Must be in English, numbers and underscores are allowed.
-			--,CList = { // <<Optional>>
+			--,CList = { // <<Optional>>  This is to add a new category with a background
 			-- Title = "LNew Dances" // <<Required>>  Category name
 			-- ,Icon = "actmod/b/mybackground.png" // <Optional>>  Add a thumbnail image, such as an icon, to the category.
 			-- ,Background = "actmod/b/myicon.jpg" // <Optional>>  Add a custom background image
@@ -48,7 +48,7 @@ return{
 			,Version = "1"   // <<Optional>>  Write a version for this dance (must be numbers only)  < Default: nothing >
 		}
 		
-		--,Flex = {   // <<Optional>>
+		--,Flex = {   // <<Optional>>  This is to add facial expressions in sync with the dance.
 		--	Path = "actmod/flexs/myfileflex.json"   // <<Required>>  The path starts from the folder "<MyAddon>/data_static/"
 		--	//,SetFPS = 30   // <<Optional>>  This determines the speed in fps (Adjust it if the dance FPS is different)
 		--	//,AddSpace = -60   // <<Optional>>  Either skip it or give it some space at the beginning (Negative means skip)
@@ -371,6 +371,7 @@ return{
 	}
 
 }
+
 
 
 
