@@ -28,6 +28,12 @@ return{
 		Config = {   // <<Required>>
 			Anim = "Amod_Fortnite_A1Dance"   // <<Required>>  Name of the (Emote/Dance) animation, It should already be included in the players' animations.
 			,Name = "Test 01 +(csm)"   // <<Required>>  Must be in English, numbers and underscores are allowed.
+			-- ,CList = { // <<Optional>>
+			-- 	Title = "LNew Dances" // <<Required>>  Category name
+			-- 	,Icon = "actmod/b/mybackground.png" // <Optional>>  Add a thumbnail image, such as an icon, to the category.
+			-- 	,Background = "actmod/b/myicon.jpg" // <Optional>>  Add a custom background image
+			-- 	,BColor = Color(50, 50, 50, 130) // <Optional>>  Color over the background image
+			-- }
 			,class = 1   // <<Optional>>  Select the category number you want it to appear in.  ( -1 means hidden for use in other things, and from 1 to 8 to display in the list )  < Default: 1 >
 			-- ,Duration = 25.5   // <<Optional>> Set the time to repeat  < Default: The duration is automatically determined by the animation. >
 			-- ,Cycle = 0   // <<Optional>>  Set Cycle when starting for the first time ( min: 0  / max: 1 )   < Default: 0 >
@@ -359,4 +365,5 @@ return{
 	}
 
 }
+
 
