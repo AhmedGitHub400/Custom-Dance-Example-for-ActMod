@@ -38,6 +38,7 @@ return{
 			-- ,Duration = 25.5   // <<Optional>> Set the time to repeat  < Default: The duration is automatically determined by the animation. >
 			-- ,Cycle = 0   // <<Optional>>  Set Cycle when starting for the first time ( min: 0  / max: 1 )   < Default: 0 >
 			-- ,Rate = 0.1   // <<Optional>>  animation speed ( min: 0  / max: 1 )   < Default: 1 >
+			-- ,Infinity = true   // <<Optional>>  It makes it not stop even if the cycle reaches the end; it is used for simple dances that use a loop. (It will be ignored if you use "Custom")   < Default: false >
 			,Repeat = false   // <<Optional>>  Allow repetition after timeout **This function will be ignored if a table "Custom" is added.**  < Default: false >
 			,isNew = true   // <<Optional>>  It appears to be new.  < Default: true >
 		}
@@ -371,6 +372,7 @@ return{
 	}
 
 }
+
 
 
 
