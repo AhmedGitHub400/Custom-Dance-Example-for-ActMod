@@ -37,7 +37,7 @@ return{
 			,class = 1   // <<Optional>>  Select the category number you want it to appear in.  ( -1 means hidden for use in other things, and from 1 to 8 to display in the list )  < Default: 1 >
 			-- ,Duration = 25.5   // <<Optional>> Set the time to repeat  < Default: The duration is automatically determined by the animation. >
 			-- ,Cycle = 0   // <<Optional>>  Set Cycle when starting for the first time ( min: 0  / max: 1 )   < Default: 0 >
-			-- ,Rate = 0.1   // <<Optional>>  animation speed ( min: 0  / max: 1 )   < Default: 1 >
+			-- ,Rate = 0.1   // <<Optional>>  animation speed   < Default: 1 >
 			-- ,Infinity = true   // <<Optional>>  It makes it not stop even if the cycle reaches the end; it is used for simple dances that use a loop. (It will be ignored if you use "Custom")   < Default: false >
 			,Repeat = false   // <<Optional>>  Allow repetition after timeout **This function will be ignored if a table "Custom" is added.**  < Default: false >
 			,isNew = true   // <<Optional>>  It appears to be new.  < Default: true >
@@ -76,8 +76,21 @@ return{
 			-- Type = 1   // <<Required>>  Type of movement ( min: 1  / max: 3 ) ( 1- Forced forward walking  | 2- Forced backward walking  | 3- Controlled forward walking or standing )
 			-- ,Speed = 50   // <<Required>>  speed of movement
 			-- ,Motion = {   // <<Optional>>  Motion control  <<Movement type 3 required>> 
+				-- // There are two methods for the walking system (Choose only one of them) :
+				-- // [1]===== Normal system ======[1]
 				-- Static = "idle_suitcase"    // <<Required>>  Change to standing animation
 				-- ,Walk = "walk_suitcase"    // <<Required>>  Change to walking animation
+				-- // [1]==========================[1]
+				-- // [2]===== Advanced system ======[2]
+				-- Static = "idle_suitcase"    // <<Required>>  Change to standing animation
+				-- ,Walk = {    // <<Required>>  Change to standing animation
+				--   Anim = "Amod_Fortnite_Headset_Walk"    // <<Required>>  Change to standing animation
+				--   ,Time = 19.7    // <<Optional>>  Set the repetition time (If no value is specified or this is not used, it will automatically determine the animation duration)
+				--   ,Cycle = 0.046698871999979    // <<Optional>>  Setting the value for Cycle determines when the animation starts from a specific frame.
+				--   ,Resume = true    // <<Optional>>  When enabled, it prevents the player's progress in Cycle from being affected when the animation changes and they return to it again.
+				-- }
+				-- // This can also be applied to "Static"
+				-- // [2]============================[2]
 			-- }
 		-- }
 		
