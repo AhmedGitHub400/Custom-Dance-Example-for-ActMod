@@ -15,6 +15,7 @@
 //     (/) note!
 //         > First of all, you must provide an image of the dance in ".png" format in the "materials/actmod/cumact" directory, and the dimensions of the image must be "250x250".
 //         > The "Custom animation ID name" Must be in English, numbers (and underscores are allowed),  and must not already exist or it will be ignored/failed to be added to ActMod.
+//         > You can use tags like "//" and "--" to add text such as notes or similar things.
 // 
 //  ----------------------------------------------------------
 //   [] Tips:
